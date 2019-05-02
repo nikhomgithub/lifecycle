@@ -6,7 +6,9 @@ https://www.youtube.com/watch?v=UPv-3SYRdZk
 import React, { Component } from "react";
 
 export default class Workflow extends Component {
+  
   // First
+  
   constructor() {
     super();
     this.state = {};
@@ -14,33 +16,39 @@ export default class Workflow extends Component {
   }
 
   // Second
+  
   static getDerivedStateFromProps() {
     console.log("getDerivedStateFromProps");
   }
 
   // Fourth
+  
   componentDidMount() {
     console.log("componentDidMount");
   }
 
   // Fith (after update)
+  
   shouldComponentUpdate() {
     console.log("shouldComponentUpdate");
     return true;
   }
 
   // Seventh (after update)
+  
   getSnapshotBeforeUpdate() {
     console.log("getSnapshotBeforeUpdate");
     return true;
   }
 
   // Eighth (after update)
+  
   componentDidUpdate() {
     console.log("componentDidUpdate");
   }
 
   // Last
+  
   componentWillUnmount() {
     console.log("componentWillUnmount");
   }
@@ -55,7 +63,9 @@ export default class Workflow extends Component {
   };
 
   // Third
+  
   // Sixth (after update)
+  
   render() {
     console.log("render");
 
